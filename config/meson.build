@@ -27,6 +27,8 @@ if fc_id == 'gcc'
   add_project_arguments(
     '-ffree-line-length-none',
     '-fbacktrace',
+    '-fcheck=all',
+    '-std=f2018',
     language: 'fortran',
   )
 elif fc_id == 'intel'
