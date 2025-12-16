@@ -43,11 +43,9 @@ jobs:
           build-type: debug
           toolchain: {compiler: gcc, version: '12', build: fpm}
 
-        # - os: windows-latest
-        #   build: meson
-        #   build-type: debug
-        #   compiler: gcc
-        #   shell: msys2 {0}
+        - os: windows-latest
+          build: meson
+          toolchain: {compiler: gcc, version: '12', build: meson}
 
     defaults:
       run:
